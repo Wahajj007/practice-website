@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration — Redline</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="nav">
+    <a class="logo" href="index.html"><span>+</span> REDLINE</a>
+    <div class="navlinks"><a href="products.html">Donate</a><a href="cart.html">Resources</a><a class="nav-cta active" href="payment.html">Register</a></div>
+  </nav>
+
+  <main class="page narrow">
+    <p class="eyebrow">REGISTRATION</p>
+    <h1>Ready to<br><em>help?</em></h1>
+    <p class="sub">Demo form — no real appointment or payment is processed.</p>
+
+    <form class="form" onsubmit="return validateForm(event)">
+      <label>FULL NAME<input id="name" type="text" placeholder="Your name"></label>
+      <label>EMAIL<input id="email" type="email" placeholder="you@example.com"></label>
+      <label>PHONE<input id="phone" type="tel" placeholder="+91 98765 43210"></label>
+      <label>BLOOD TYPE
+        <select id="blood">
+          <option value="">Select type</option><option>A+</option><option>A-</option><option>B+</option><option>B-</option>
+          <option>AB+</option><option>AB-</option><option>O+</option><option>O-</option>
+        </select>
+      </label>
+      <label class="check"><input id="agree" type="checkbox"> I understand this is a demo registration.</label>
+      <p id="error" class="error"></p>
+      <button class="btn primary full" type="submit">Submit registration →</button>
+    </form>
+  </main>
+  <footer>REDLINE © 2026 · INFORMATION PORTAL</footer>
+  <script src="script.js"></script>
+</body>
+</html>
